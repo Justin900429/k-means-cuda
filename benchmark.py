@@ -91,7 +91,7 @@ class Benchmark:
         self._output_stream("> " + f"\033[3m{output}{attr(0)}\n")
 
     def _run_stage(self, num_cluster, num_data):
-        generate_cluster_data(n_samples=num_data, n_centers=num_cluster)
+        generate_cluster_data(n_samples=num_data, n_centers=num_cluster, save_backup=True)
         predict_result = []
         elapsedTime = []
         for exec_type in sorted(list(name_to_exec.keys())):
