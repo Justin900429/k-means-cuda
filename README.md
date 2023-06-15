@@ -58,7 +58,7 @@ Users can generate data by running
 
 To compile only the wanted program, users can use `make <program name>`
 
-| allowed program name  |
+| supported files       |
 | --------------------- |
 | cpu_kmeans            |
 | gpu_block_kmeans      |
